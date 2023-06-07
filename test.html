@@ -8,39 +8,15 @@
 </head>
 <body>
     <div id="hello">
-        <select id="s" onchange="handlechange()">
+        <select id="s" >
             <option value="option1">Option 1</option>
             <option value="option2">Option 2</option>
             <option value="option3">Option 3</option>
         </select>
     </div>
     <div id="t">
-        <input type="text" onchange="textsub()" id="text">
+        <input type="text" id="text">
     </div>
     <button >switch</button>
 </body>
 </html>
-<!-- <script>
-    // function myfct(){
-    //     const t = document.getElementById('t');
-    //     t.hidden;
-    // }
-    const handlechange = () => {
-        const selectedOption = document.getElementById('s').value;
-        console.log(selectedOption);
-    }
-    const switchbtn =()=>{
-        const hello = document.getElementById('hello');
-        if (hello.hidden) {
-            hello.hidden = false;
-            t.hidden = true;
-        } else {
-            hello.hidden = true;
-            t.hidden = false;
-        }
-    }
-    const textsub =()=>{
-        const text=document.getElementById('text').value;
-        console.log(text);
-    }
-</script> -->
