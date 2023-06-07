@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="hello">
+        <select id="s" onchange="handlechange()">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+    </div>
+    <div id="t">
+        <input type="text" onchange="textsub()" id="text">
+    </div>
+    <button onclick="switchbtn()">switch</button>
+</body>
+</html>
+<script>
+    // function myfct(){
+    //     const t = document.getElementById('t');
+    //     t.hidden;
+    // }
+    const handlechange = () => {
+        const selectedOption = document.getElementById('s').value;
+        console.log(selectedOption);
+    }
+    const switchbtn =()=>{
+        const hello = document.getElementById('hello');
+        if (hello.hidden) {
+            hello.hidden = false;
+            t.hidden = true;
+        } else {
+            hello.hidden = true;
+            t.hidden = false;
+        }
+    }
+    const textsub =()=>{
+        const text=document.getElementById('text').value;
+        console.log(text);
+    }
+</script>
